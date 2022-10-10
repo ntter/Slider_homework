@@ -1,0 +1,313 @@
+@media only screen and (min-width: 1440px){
+    .welcome__section{
+        background: url(../img/turnkey-repair-lg.jpg) rgba(0, 0, 0, 0.7);
+    }
+}
+@media only screen and (max-width: 1300px){
+    .your__fantasies__projects{
+        grid-template-columns: 40% 60%;
+    }
+    .gallery__left__column ul{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 1rem;
+    }
+    .gallery__left__column ul:first-child{
+        margin: 0;
+    }
+    .gallery__left__column ul:last-child{
+        margin: 0;
+    }
+    .your__fantasies__gallery{
+        gap: 1rem;
+        padding: 50px 0;
+    }
+    .your__fantasies__list h2{
+        font-size: 20px;
+    }
+    .your__fantasies__list ul{
+        gap: 20px;
+    }
+    .gallery__right__column ul{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 1rem;
+    }
+    .gallery__right__column ul:first-child{
+        margin: 0;
+    }
+    .gallery__right__column ul:last-child{
+        margin: 0;
+    }
+    .gallery__right__column ul li img, .gallery__left__column ul li img{
+        object-fit: cover;
+        object-position: center center;
+    }
+    .your__fantasies__list{
+        gap: 1rem;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+    .your__fantasies{
+        height: fit-content;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .container{
+        width: 90%;
+    }
+    .clients__reviews__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .small__container{
+        width: 80%;
+    }
+    .contact__information__form{
+        padding: 0px 100px 35px;
+    }
+    .our__projects__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main__menu__contacts button{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .our__benefits__section, .our__benefits__section-piggy{
+        display: none;
+    }
+    .main__menu{
+        display: none;
+    }
+    .main__menu__contacts a{
+        color: var(--white);
+        text-decoration: none;
+    }
+    .main__menu__contacts a:hover{
+        color: var(--gold);
+        text-decoration: underline;
+    }
+    .completed__projects__section{
+        padding: 50px 0 400px;
+    }
+    .completed__projects__navigation{
+        display: none;
+    }
+    .completed__projects{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        grid-template-areas:
+        "header header"
+        "content content"
+        "image image"
+        "city area"
+        "time cost"
+    }
+    .completed__projects__info.active{
+        grid-template-areas: 
+    "header header"
+    "content content"
+    "city area"
+    "time cost"
+    "navigation navigation";
+    }
+    .project__image{
+        grid-area: image;
+    }
+    .project__navigation{
+        display: none;
+    }
+    .project__image{
+        position: relative;
+    }
+    .project__image button{
+        display: block;
+    }
+    .project__header{
+        text-align: center;
+    }
+    .project__header h2{
+        word-spacing:700px;
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+    .project__body p{
+        text-align: center;
+        font-size: 11px;
+        line-height: 158.48%;
+        margin-bottom: 25px;
+    }
+    .project__city h5, .project__area h5, .project__time h5, .repair__cost h5{
+        font-size: 14px;
+        line-height: 138.6%;
+        margin-bottom: 12px;
+    }
+    .project__city p, .project__area p, .project__time p, .repair__cost p{
+        font-size: 11px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    *:-moz-placeholder{
+        color: var(--white);
+        opacity: 1;
+    }
+    *::-moz-placeholder{
+        color: var(--white);
+        opacity: 1;
+    }
+    .container{
+        width: 92%;
+    }
+    .btn{
+        padding: 20px 2.063rem;
+    }
+    .welcome__section{
+        background: url(../img/turnkey-repair-small.jpg) rgba(0, 0, 0, 0.7);
+        height: 500px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .welcome__message{
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+        height: auto;
+    }
+    .welcome__message h1, .welcome__message h1 span{
+        font-size: 23px;
+        line-height: 132.83%;
+        width: 90%;
+    }
+    .welcome__message p{
+        font-size: 14px;
+        line-height: 135.84%;
+        width: 90%;
+    }
+    .welcome__message__footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .online__control__section{
+        background-color: var(--black);
+    }
+    .online__control__text{
+        color: var(--white);
+        font-size: 11px;
+        line-height: 169.8%;
+    }
+    .application__form{
+        flex-direction: column;
+    }
+    .application .submit{
+        display: none;
+    }
+    .application__form-item{
+        width: 100%;
+    }
+    .application__form-item label{
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .application__form-item input{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .application__form-item input::placeholder{
+        color: var(--white);
+    }
+    .application__form-footer{
+        justify-content: flex-start;
+        padding-bottom: 50px;
+    }
+    .application__form-footer .text{
+        color: var(--white);
+        font-size: 14px;
+        line-height: 163.68%;
+    }
+    .application .mobile__submit{
+        display: block;
+        width: 100%;
+        margin-bottom: -25px;
+    }
+    .your__fantasies-mobile{
+        display: block;
+    }
+    .your__fantasies__gallery-mobile button{
+        display: block;
+    }
+    .your__fantasies{
+        display: none;
+    }
+    .clients__reviews{
+        display: none;
+    }
+    .contact__information{
+        background: var(--black);
+    }
+    .small__container{
+        width: 100%;
+    }
+    .contact__information__form{
+        margin-top: -150px;
+        padding: 200px 20px 0;
+    }
+    .application__form__black-line{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .application__form__black-line-item{
+        width: 100%;
+    }
+    .application__form__black input[type="submit"]{
+        width: 100%;
+        padding: 20px 2.063rem;
+    }
+    .contact__information__map-subheading{
+        order: 2;
+        width: 85%;
+    }
+    .contact__information__map-subheading h4{
+        font-size: 18px;
+        line-height: 24.95px;
+    }
+    .contact__information__map-subheading h4 br{
+        display: none;
+    }
+    .contact__information__map-icons{
+        order: 3;
+        padding-bottom: 50px;
+    }
+    .contact__information__map-icons a{
+        width: 40px;
+        height: 40px;
+    }
+    .contact__information__map-img{
+        width: 92%;
+        margin-bottom: 1rem;
+    }
+    .contact__information__map-img a img{
+        height: 300px;
+        object-fit: cover;
+        object-position: center center;
+    }
+    footer{
+        display: none;
+    }
+    .our__projects__grid{
+        grid-template-columns: 1fr;
+    }
+    .our__projects{
+        margin: 6rem auto 3rem;
+    }
+    .our__projects__picture{
+        max-width: none;
+    }
+    .our__projects__description{
+        align-self: flex-start;
+    }
+}
